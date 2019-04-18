@@ -9,11 +9,14 @@
 <p>You are back at home port with nothing to show for it.
     Better get going before someone notices.
 </p>
+    <img src="/assets/images/shamecat.jpg" width="300">
+    <br>
+    <br>
 <form action="/westFromEngland" method="POST">
     @helper.CSRF.formField
     <input type="submit" value="Sail West"/>
 </form>
-<form action="/northEnd" method="POST">
+<form action="/firstNorthStop" method="POST">
     @helper.CSRF.formField
     <input type="submit" value="Sail North"/>
 </form>
