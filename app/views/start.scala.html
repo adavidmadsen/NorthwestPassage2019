@@ -11,11 +11,14 @@
     Most of your sailor friends believe that your best chance of success is to sail northwest above North America.
     However, some of your crew believe you should try going east over Russia or north over the top of the world instead.
 </p>
+    <img src="/assets/images/compass.jpg" width="350">
+    <br>
+    <br>
 <form action="/westFromEngland" method="POST">
     @helper.CSRF.formField
     <input type="submit" value="Sail West"/>
 </form>
-<form action="/northEnd" method="POST">
+<form action="/firstNorthStop" method="POST">
     @helper.CSRF.formField
     <input type="submit" value="Sail North"/>
 </form>

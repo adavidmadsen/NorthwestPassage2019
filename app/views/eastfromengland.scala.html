@@ -1,3 +1,4 @@
+@(crewSize : String)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,10 @@
     You keep going in and out of bays trying to find a way east but you always run into land.
     You are afraid you may run aground and be eaten by one of the roving bands of feral kittens you see frolicking upon the shore.
 </p>
+    <img src="/assets/images/bay.jpg" width="400">
+    <br>
+    <br>
+    <p>Current crew size = @crewSize</p>
 <form action="/home" method="POST">
     @helper.CSRF.formField
     <input type="submit" value="Sail back West"/>

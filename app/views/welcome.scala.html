@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Northwest Passage</title>
-</head>
-<body>
-<h1>Northwest Passage</h1>
-<h2>A Game of Cunning and Skill</h2>
-<p>
-    This game is meant to be played by only the most skilled gamers.  Play at your own risk!
-</p>
-<form action="/start" method="POST">
-    @helper.CSRF.formField
-    <input type="submit" value="Let's Do This!"/>
-</form>
-<form action="/kittens" method="GET">
-    <input type="submit" value="Kittens"/>
-</form>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Northwest Passage</title>
+    </head>
+    <body>
+        <h1>Northwest Passage</h1>
+        <h2>A Game of Cunning and Skill</h2>
+        <p>
+            This game is meant to be played by only the most skilled gamers. Play at your own risk!
+        </p>
+        <img src="/assets/images/shipone.jpg" width="400">
+        <form action="/start" method="POST">
+            @helper.CSRF.formField
+            <label for="charactername"><strong>Enter Your Name</strong></label><br>
+            <input type="text" name="charactername" id="charactername" required="required" >
+            <br>
+            <br>
+            <input type="submit" value="Let's Do This!"/>
+        </form>
+        <form action="/kittens" method="GET">
+            <input type="submit" value="Kittens"/>
+        </form>
+    </body>
 </html>

@@ -1,3 +1,4 @@
+@(characterName : String)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,18 @@
 <p>You reach China and load up on fidget spinners.
     When you get back to England the Queen rewards you with a monopoly on importing them.
     You spin happily ever after.
-    The end.
+    Congratulations @characterName!
 </p>
+    <img src="/assets/images/gold.jpg" width="400">
+    <br>
+    <br>
+    <form method="get" action="/">
+        <input type="submit" value="New Player">
+    </form>
+
+    <form method="get" action="/start">
+        @helper.CSRF.formField
+        <input type="submit" value="Return To Start">
+    </form>
 </body>
 </html>

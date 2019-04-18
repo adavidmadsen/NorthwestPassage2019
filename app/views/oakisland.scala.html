@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Oak Island</title>
+    </head>
+    <body>
+        <h1><strong>Welcome To Oak Island</strong></h1>
+        <br>
+        <p>You have lost too many crew members to continue.</p>
+           <P> You must take refuge on Oak Island and hope for rescue.</p>
+       <p> Perhaps you can bide your time by looking for the Templar treasure.  </p>
+        <br>
+        <br>
+        <img src="/assets/images/oakisland.jpg" width="300">
+        <br>
+
+        <form method="get" action="/">
+            <input type="submit" value="New Player">
+        </form>
+
+        <form method="get" action="/start">
+            @helper.CSRF.formField
+            <input type="submit" value="Return To Start">
+        </form>
+    </body>
+</html>

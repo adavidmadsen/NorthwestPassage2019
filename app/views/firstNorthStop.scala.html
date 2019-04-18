@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Kraken Attacks</title>
+    </head>
+    <body>
+        <h1><strong>The Kraken</strong></h1>
+        <p>As you are sailing across the great northern expanse of ocean you see an unwelcome sight on the horizon..... A kraken.
+        You bravely fight off the horrible beast but it has left you and your crew beaten. Many are injured with some near death.
+        Do you continue your noble quest for Queen and country or turn back to rest and resupply?</p>
+        <br>
+        <img src="/assets/images/kraken.jpg" width="600">
+        <br>
+
+
+
+        <form action="/northEnd" method="POST">
+            @helper.CSRF.formField
+            <input type="submit" value="Sail North"/>
+            </form>
+
+            <form action="/home" method="POST">
+                @helper.CSRF.formField
+                <input type="submit" value="Return South">
+                </form>
+
+    </body>
+</html>

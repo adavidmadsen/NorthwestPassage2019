@@ -1,3 +1,4 @@
+@(crewSize : String)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +16,13 @@
     The crew takes the pills and are healed the next day.
     You feel better now and think you see a clear path through the iceburgs.
 </p>
+    <img src="/assets/images/iceberg.jpg" width="300">
+    <br>
+    <br>
+    <p>Current Crew Size = @crewSize</p>
 <form action="@routes.GameController.postHomePort" method="POST">
     @helper.CSRF.formField
-    <input type="submit" value="Cowardly sail back to England"/>
+    <input type="submit" value="Cowardly sail back east to England"/>
 </form>
 <form action="@routes.GameController.postWestEnd" method="POST">
     @helper.CSRF.formField

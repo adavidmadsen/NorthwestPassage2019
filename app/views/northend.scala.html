@@ -1,3 +1,4 @@
+@(characterName : String)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,17 @@
     Lucky for you a passing catfish chases away the coelacanths.
     You are all able to swim to the shore of a frozen island where you find nothing to eat but lettuce.
     Years later you are rescued by a ship named Titanic on its way to the New World.
-    The end.
+    This the end for @characterName
 </p>
+    <img src="/assets/images/shipwreck.jpg" width="400">
+    <br>
+    <br>
+    <form method="get" action="/">
+        <input type="submit" value="New Player">
+    </form>
+    <form method="get" action="/start">
+        @helper.CSRF.formField
+        <input type="submit" value="Return To Start">
+    </form>
 </body>
 </html>
